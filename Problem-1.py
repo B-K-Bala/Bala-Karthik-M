@@ -1,7 +1,12 @@
+# Problem-1.py
+# First problem - Simple Calcluaator using class - class name Calculator 
+# For Double i imported double from matplotlib.pylab
+# Inputs : a --> double , b --> double , c --> string
+
 from matplotlib.pylab import double
 
 
-class clacultor:
+class calcultor:
     def __init__(self,a,b):
         self.a =a
 
@@ -23,7 +28,7 @@ if __name__ == "__main__":
     b=double(input("Enter second number: "))
     operation=input("Enter operation (add,sub,mul,div): ")
 
-    cal = clacultor(a,b)
+    cal = calcultor(a,b)
     if operation == "add":
         print(f"Addition {a} {operation} {b} :",cal.add())
     elif operation == "sub":
@@ -36,4 +41,5 @@ if __name__ == "__main__":
         print("Unknown operation")
         
      
+
         
